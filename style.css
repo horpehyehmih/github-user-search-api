@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Light Mode */
+:root[ color-mode = "light" ]{
+    --body-bg-color-: #f6f6ff;
+    --head-color-: #222731;
+    --darklight-color-: #697c9a;
+    --search-bg-color-: white;
+    --search-color-: #4b6a9b;
+    --black: black;
+    --follow-color-: #4b6a9b;
+    --followTotal-color-: #2b3442;
+}
+
+body{
+    background-color: #f6f6ff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Libre Franlin", sans-serif;
+    font-family: "Outfit", sans-serif;
+    font-family: "Red Hat Text", sans-serif;
+    font-family: "Space Mono", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 730px;
+    margin-bottom: 25px;
+}
+
+.head{
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--head-color-);
+}
+
+.color-mode__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #032449;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: none;
+}
+
+.dark .fa-light,
+.light .fa-light{
+    width: 20px;
+    height: 20px;
+}
+
+.search{
+    height: 69px;
+    width: 730px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchtext{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.searchtext .fa-magnifying-glass{
+    margin-left: 35px;
+    color: #0079ff;
+}
+
+.searchtext input{
+    margin-left: 20px;
+    height: 100px;
+    width: 500px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: var(--search-color-);
+    background-color: var(--search-bg-color-);
+}
+
+::placeholder{
+    color: var(--search-color-);
+    opacity: 1;
+}
+
+.search-btn{
+    height: 50px;
+    width: 106px;
+    background-color: #0079ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+
+.resultbody{
+    background-color: white;
+    width: 730px;
+    height: 419px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultbody .mainImg{
+    width: 117px;
+    height: 117px;
+    border: 1px solid #000;
+    border-radius: 117px;
+    object-fit: contain;
+}
+
+.resultbody .mainImg img{
+    object-fit: 117px;
+    width: 117px;
+    height: 117px;
+    border-radius: 117px;
+}
+
+.githubHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 650px;
+    margin-top: 30px;
+}
+
+.githubInfo{
+    height: 100px;
+    width: 480px;
+    position: relative;
+}
+
+.githubUser{
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--followTotal-color-);
+}
+
+.githubJoinedDate{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 15px;
+    color: var(--darklight-color-);
+}
+
+.githubUserName{
+    margin-top: 5px;
+}
+
+.githubUserName a{
+    color: #0079ff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.githubFact{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.githubBio{
+    width: 480px;
+    height: 25px;
+    color: var(--search-color-);
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.githubRepo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f6f6ff;
+    height: 85px;
+    width: 480px;
+    border-radius: 10px;
+}
+
+.repoHeading .followerHeading .followingHeading{
+    font-size: 15px;
+    color: white;
+}
+
+.repoTotal, .followerTotal, .followingTotal{
+    font-size: 22px;
+    color: #2b3442;
+    font-weight: bold;
+}
+
+.githubSocial{
+    display: grid;
+    grid-template-columns: 240px 240px;
+    row-gap: 1.2em;
+    /* color: white; */
+    margin-top: 30px;
+}
+
+.location, .twitter, .website, .company{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.fa-sharp{
+    margin-right: 10px;
+    color: #2b3442;
+}
+
+.fa-brands{
+    margin-right: 10px;
+    color: #2b3442;
+}
+
+.fa-solid{
+    margin-right: 10px;
+    color: #2b3442;
+}
